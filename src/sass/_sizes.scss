@@ -1,0 +1,12 @@
+:root {
+  // layout
+  --header-height: 80px;
+  --footer-height: 80px;
+  --body-filled-height: calc(var(--header-view-height) + var(--foter-view-height));
+  --main-view-min-height: calc(100vh - var(--body-filled-height));
+
+  // container
+  --container-max-width: 1440px;
+  --container-padding-left: 20px;
+  --container-padding-right: 20px;
+}

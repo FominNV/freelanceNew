@@ -1,0 +1,26 @@
+.theme--dark {
+  // body
+  --body-background-color-primary: var(--background-color-pale-blue-darkest);
+  --body-background-color-secondary: var(--background-color-pale-blue);
+
+  // block
+  --block-background-color-primary: var(--background-color-pale-blue-dark);
+  --block-background-color-secondary: var(--background-color-pale-blue-low-dark);
+  --block-border-color-primary: var(--border-color-pale-blue-dark);
+
+  // navbar
+  --navbar-font-color: var(--font-color-white-low-blue);
+  --navbar-font-hover-color: var(--font-color-pale-blue);
+
+  // font
+  --font-color-primary: var(--font-color-white-low-blue);
+  --font-color-secondary: var(--font-color-pale-blue);
+
+  // switch
+  --switch-background-color: var(--background-color-white);
+  --switch-toggle-background-color: var(--background-color-pale-blue);
+
+  // theme-switcher
+  --theme-switcher-icon-color-dark: var(--font-color-pale-blue);
+  --theme-switcher-icon-color-light: var(--font-color-white-low-blue);
+}

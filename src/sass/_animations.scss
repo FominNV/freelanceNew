@@ -1,0 +1,32 @@
+@keyframes homeBgText {
+  0%,
+  10%,
+  100% {
+    background-position: -120px 0 ;
+  }
+
+  60%,
+  85% {
+    background-position: 0 0 ;
+  }
+}
+
+@keyframes homeCursoreText {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  60%,
+  72.5%,
+  85% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  66.25%,
+  78.75% {
+    opacity: 0;
+  }
+}

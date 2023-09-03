@@ -1,0 +1,9 @@
+node_modules
+*.log*
+.husky
+dist
+assets
+.DS_Store
+*.js*
+*nuxt.config.ts*
+components/icons/**
