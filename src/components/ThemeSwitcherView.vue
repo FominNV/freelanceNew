@@ -44,7 +44,7 @@ function changeTheme(value: LayoutTheme) {
 
   display: flex;
   align-items: center;
-  column-gap: 8px;
+  column-gap: 2px;
 
   &__icon-dark {
     path {

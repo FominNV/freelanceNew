@@ -4,16 +4,19 @@ header.header-view
     div.header-view__content
       ui-text-animater(text="Get it")
       ui-navbar(:items="navbarItems")
-      theme-switcher-view
+      div.header-view__settings
+        theme-switcher-view
+        language-switcher-view
 </template>
 
 <script setup lang="ts">
 import type { IUiNavbarItem } from '@ui/components/ui-navbar/types';
-import { headerNavbarItems } from '@/entities/constants';
+import { HeaderNavbarItems } from '@/entities/constants';
 import ThemeSwitcherView from './ThemeSwitcherView.vue';
+import LanguageSwitcherView from './LanguageSwitcherView.vue';
 import { ref } from 'vue';
 
-const navbarItems = ref<IUiNavbarItem[]>(headerNavbarItems);
+const navbarItems = ref<IUiNavbarItem[]>(HeaderNavbarItems);
 </script>
 
 <style lang="scss">
@@ -28,6 +31,12 @@ const navbarItems = ref<IUiNavbarItem[]>(headerNavbarItems);
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__settings {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
   }
 }
 </style>

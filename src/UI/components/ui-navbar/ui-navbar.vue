@@ -12,7 +12,7 @@ nav.ui-navbar
         :key="item.id"
         :class="['ui-navbar__list-item-btn', {'ui-navbar__list-item-btn--active': checkActiveRoute(item.path)}]"
         @click="() => changePath(item.path)"
-        ) {{ $t(item.name) || item.title }}
+        ) {{ $t(item.tname) || item.title }}
 </template>
 
 <script setup lang="ts">
