@@ -9,19 +9,23 @@ import { computed } from 'vue';
 interface IIUButtonProps {
   size?: 'sm' | 'md' | 'lg';
   round?: boolean;
-  theme?: 'primary' | 'secondary';
+  theme?: 'primary' | 'secondary' | 'action';
+  shadow?: boolean;
 }
 
 const props = withDefaults(defineProps<IIUButtonProps>(), {
   size: 'md',
   round: false,
   theme: 'primary',
+  shadow: false,
 });
 
 const classNames = computed<ClassPropsType>(() => [
   'ui-button',
   `ui-button--theme-${props.theme}`,
   `ui-button--size-${props.size}`,
+  { 'ui-button--round': props.round },
+  { 'ui-button--shadow': props.shadow },
 ]);
 </script>
 
@@ -32,6 +36,8 @@ const classNames = computed<ClassPropsType>(() => [
   --ui-button-font-color-primary: var(--button-font-color-primary);
   --ui-button-background-color-secondary: var(--button-background-color-secondary);
   --ui-button-font-color-secondary: var(--button-font-color-secondary);
+  --ui-button-background-color-action: var(--button-background-color-action);
+  --ui-button-font-color-action: var(--button-font-color-action);
 
   // size
   --ui-button-sm-font-size: 13px;
@@ -43,13 +49,17 @@ const classNames = computed<ClassPropsType>(() => [
 
   @include btn-reset();
   transition: all 0.25s;
-
+  
   &:active {
     transform: scale(.95)
   }
-
+  
   &:hover {
     filter: brightness(130%);
+  }
+
+  &--shadow {
+    box-shadow: 0 0 5px 0 rgba($color: gray, $alpha: 0.75);
   }
 
   &--size-sm {
@@ -78,6 +88,15 @@ const classNames = computed<ClassPropsType>(() => [
   &--theme-secondary {    
     background-color: var(--ui-button-background-color-secondary);
     color: var(--ui-button-font-color-secondary);    
+  }
+
+  &--theme-action {    
+    background-color: var(--ui-button-background-color-action);
+    color: var(--ui-button-font-color-action);
+  }
+
+  &--round {
+    border-radius: 22px;
   }
 }
 </style>

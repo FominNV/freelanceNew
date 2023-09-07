@@ -3,7 +3,7 @@
   ui-dropdown(:title="$t('language.locale')")
     ui-button(
       v-for="item in dropdownItems"
-      :key="item.locale"      
+      :key="item.locale"
       @click="setLanguage($i18n, item.locale)"
     ) {{ item.title }}
 </template>

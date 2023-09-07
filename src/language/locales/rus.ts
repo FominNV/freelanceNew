@@ -6,6 +6,21 @@ export const rus: ILanguageLocale = {
     settings: 'Настройки',
     about: 'О проекте',
   },
+  header: {
+    jobButtons: {
+      findJob: 'Найти работу',
+      offerJob: 'Предложить работу',
+    },
+  },
+  footer: {
+    cards: {
+      titles: {
+        advertisement: 'Реклама',
+        link: 'Социальные сети',
+        address: 'Адресс',
+      },      
+    },
+  },
   language: {
     locale: 'Русский',
   },
