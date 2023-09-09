@@ -1,8 +1,13 @@
 <template lang="pug">
 div(:class="cardClassname")
-  h4(
+  div(
     v-if="title"
-    :class="cardTitleClassname") {{ title }}
+    :class="cardTitleClassname") 
+      ui-title(
+        size="lg"
+        level="3"
+        type="subtitle"
+        :text="title")
   .ui-card__content 
     slot
 </template>
@@ -43,6 +48,7 @@ const cardClassname = computed<ClassPropsType>(() => [
 
   &__title {
     padding: 8px 0;
+    font-size: 1.17em;
     border-bottom: 3px solid transparent;
 
     &--bordered {
@@ -51,7 +57,7 @@ const cardClassname = computed<ClassPropsType>(() => [
   }
 
   &__content {
-    padding: 8px 0;
+    padding: 8px 0;    
   }
 
 }

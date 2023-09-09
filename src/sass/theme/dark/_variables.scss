@@ -37,8 +37,10 @@
 
   // footer
   --footer-background-color: var(--background-color-pale-gray-blue);
+  --footer-text-color: var(--font-color-gray);
+  --footer-text-hover-color: var(--font-color-pale-blue);
 
   // ui-card
   --card-title-border-color: var(--border-color-white);
-  --card-title-content-color: var(--background-color-pale-blue);
+  --card-content-color: var(--font-color-gray);
 }

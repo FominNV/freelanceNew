@@ -10,13 +10,15 @@ footer.footer-view
         ui-card(
           :title="$t(item.title)"
           titleBorder
-        ) {{ $t(item.title) }}
+        )
+          footer-content(:index="i")
 </template>
 
 <script setup lang="ts">
 import { FooterCardItems } from '@/entities/constants/footer-view';
 import type { IItemDto } from '@/types';
 import { ref } from 'vue';
+import { FooterContent } from '@/content';
 
 const cardItems = ref<IItemDto[]>(FooterCardItems);
 </script>
@@ -25,11 +27,11 @@ const cardItems = ref<IItemDto[]>(FooterCardItems);
 .footer-view {
   --ui-footer-heght: var(--footer-height);
   --ui-footer-background-color: var(--footer-background-color);
-  --ui-footer-content-col-gap: 20px;
+  --ui-footer-content-col-gap: 60px;
   --ui-footer-card-wrap-width: calc(33% - (var(--ui-footer-content-col-gap)/2));
 
   height: var(--ui-footer-heght);
-  padding: 60px 0;
+  padding: 40px 0;
   background-color: var(--ui-footer-background-color);
 
   &__content {

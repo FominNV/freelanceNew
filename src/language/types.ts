@@ -16,7 +16,11 @@ export interface ILanguageLocale {
         advertisement: string;
         link: string;
         address: string;
-      }      
+      }
+      content: {
+        advertisment: string;
+        address: string;
+      }
     }
   },
   language: {

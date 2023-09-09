@@ -18,7 +18,11 @@ export const eng: ILanguageLocale = {
         advertisement: 'Advertisement',
         link: 'Social Links',
         address: 'Address',
-      },      
+      },
+      content: {
+        advertisment: 'Pay for all online advertising in one window in a couple of clicks. No need to remember 10 passwords and re-enter payment information each time.',
+        address: 'Russia, Krasnodar, Krasnaya st., 666',
+      }, 
     },
   },
   language: {

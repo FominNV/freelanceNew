@@ -96,7 +96,7 @@
       1,
       {
         "code": 180,
-        "comments": 100,
+        "comments": 120,
         "tabWidth": 2,
         "ignorePattern": "d=([\\s\\S]*?)",
         "ignoreTemplateLiterals": true,
