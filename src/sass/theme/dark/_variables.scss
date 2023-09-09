@@ -8,7 +8,7 @@
   --block-background-color-secondary: var(--background-color-pale-blue-low-dark);
   --block-border-color-primary: var(--border-color-pale-blue-dark);
 
-  // navbar
+  // ui-navbar
   --navbar-font-color: var(--font-color-white-low-blue);
   --navbar-font-hover-color: var(--font-color-pale-blue);
 
@@ -16,11 +16,31 @@
   --font-color-primary: var(--font-color-white-low-blue);
   --font-color-secondary: var(--font-color-pale-blue);
 
-  // switch
+  // ui-switch
   --switch-background-color: var(--background-color-white);
   --switch-toggle-background-color: var(--background-color-pale-blue);
 
   // theme-switcher
   --theme-switcher-icon-color-dark: var(--font-color-pale-blue);
   --theme-switcher-icon-color-light: var(--font-color-white-low-blue);
+
+  // ui-dropdown
+  --dropdown-body-background-color: var(--background-color-pale-blue-dark);
+
+  // ui-button
+  --button-background-color-primary: var(--background-color-pale-blue-dark);
+  --button-font-color-primary: var(--font-color-pale-blue);
+  --button-background-color-secondary: var(--background-color-pale-blue-low-dark);
+  --button-font-color-secondary: var(--font-color-white-low-blue);
+  --button-background-color-action: var(--background-color-pink-dark);
+  --button-font-color-action: var(--font-color-white-low-blue);
+
+  // footer
+  --footer-background-color: var(--background-color-pale-gray-blue);
+  --footer-text-color: var(--font-color-gray);
+  --footer-text-hover-color: var(--font-color-pale-blue);
+
+  // ui-card
+  --card-title-border-color: var(--border-color-white);
+  --card-content-color: var(--font-color-gray);
 }

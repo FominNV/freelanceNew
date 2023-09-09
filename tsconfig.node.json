@@ -2,15 +2,28 @@
   "compilerOptions": {
     "composite": true,
     "skipLibCheck": true,
-    "module": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
+    "noUnusedLocals": false,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@ui/*": [
+        "./src/UI/*"
+      ]
+    },
   },
   "include": [
     "vite.config.ts",
     "src/entry-server.ts",
     "src/vite-env.d.ts",
     "src/main.ts",
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "src/**/*.vue",
+    "src/**/*.json"
   ],
 }

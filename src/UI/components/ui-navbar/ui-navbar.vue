@@ -12,7 +12,7 @@ nav.ui-navbar
         :key="item.id"
         :class="['ui-navbar__list-item-btn', {'ui-navbar__list-item-btn--active': checkActiveRoute(item.path)}]"
         @click="() => changePath(item.path)"
-        ) {{ $t(item.name) || item.title }}
+        ) {{ $t(item.tname) || item.title }}
 </template>
 
 <script setup lang="ts">
@@ -50,14 +50,13 @@ function checkActiveRoute(path: string): boolean {
     height: 100%;
     display: flex;
     align-items: center;
-    column-gap: 32px;
+    column-gap: 16px;
   }
 
   &__list-item-btn {
     @include btn-reset();
     padding: 12px 8px;
-    font-size: 18px;
-    // color: var(--ui-navbar-item-color);
+    font-size: 19px;
     border-bottom: 2px solid transparent;
     transition: all 0.25s;
 

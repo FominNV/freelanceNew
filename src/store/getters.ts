@@ -3,6 +3,6 @@ import { IMainStore } from "./types";
 
 export const getters = {
   getLanguage: (state: IMainStore): string => {
-    return state.language === LanguageLocale.ENG ? 'Eng' : 'Rus';
+    return state.language === LanguageLocale.ENG ? 'English' : 'Русский';
   },
 };

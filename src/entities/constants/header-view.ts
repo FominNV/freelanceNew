@@ -1,21 +1,33 @@
 
+import { IItemDto } from "@/types";
 import { IUiNavbarItem } from "../../UI/components/ui-navbar/types";
 import { createGuid } from "../../utils/Maths";
 
-export const headerNavbarItems: IUiNavbarItem[] = [
+export const HeaderNavbarItems: IUiNavbarItem[] = [
   {
     id: createGuid(),
     path: '/',
-    name: 'navbar.main',
+    tname: 'navbar.main',
   },
   {
     id: createGuid(),
     path: '/settings',
-    name: 'navbar.settings',
+    tname: 'navbar.settings',
   },
   {
     id: createGuid(),
     path: '/about',
-    name: 'navbar.about',
+    tname: 'navbar.about',
+  },
+];
+
+export const HeaderJobButtons: IItemDto[] = [
+  {
+    tname: 'header.jobButtons.findJob',
+    theme: 'secondary',
+  },
+  {
+    tname: 'header.jobButtons.offerJob',
+    theme: 'action',
   },
 ];

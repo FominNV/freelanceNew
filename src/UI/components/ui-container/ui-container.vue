@@ -9,6 +9,7 @@ div.ui-container
   --ui-container-padding-right: var(--container-padding-right);
   --ui-container-padding-left: var(--container-padding-left);
 
+  /* min-height: 100%; */
   height: 100%;
   max-width: var(--ui-container-max-width);
   margin-right: auto;
