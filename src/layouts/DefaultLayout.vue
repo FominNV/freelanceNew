@@ -8,9 +8,6 @@ div.default-layout(:class="themeClassName")
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import HeaderView from '../components/HeaderView.vue';
-import FooterView from '@/components/FooterView.vue';
-import MainView from '@/components/MainView.vue';
 import { useMainStore } from '@/store';
 
 const mainStore = useMainStore();
@@ -20,7 +17,7 @@ const themeClassName = computed<string>(() => `theme--${mainStore.layoutTheme}`)
 
 <style lang="scss">
 * {
-    --font-color: var(--font-color-primary); 
+    --font-color: var(--font-color-primary);
 
     color: var(--font-color);
   }

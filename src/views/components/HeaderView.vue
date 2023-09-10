@@ -2,7 +2,7 @@
 header.header-view
   ui-container
     div.header-view__content
-      div.header-view__lobby        
+      div.header-view__lobby
         ui-text-animater(text="Get it")
         div.header-view__job-buttons
           ui-button(
@@ -11,7 +11,7 @@ header.header-view
             :theme="item.theme"
             shadow
           ) {{ $t(item.tname) }}
-        
+
       ui-navbar(:items="navbarItems")
       div.header-view__settings
         theme-switcher-view

@@ -3,3 +3,4 @@ export * from './class-props';
 export * from './language-switcher';
 export * from './item-dto';
 export * from './content-props';
+export * from './module';

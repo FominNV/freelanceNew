@@ -1,7 +1,8 @@
 {
   "recommendations": [
-    "Vue.volar",
-    "EditorConfig.EditorConfig",
+    "vue.volar",
+    "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
+    "ms-ceintl.vscode-language-pack-ru"
   ],
 }

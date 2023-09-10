@@ -3,16 +3,18 @@ component(
   :is="tagName"
   :type="type"
   :class="className"
+  :style="styles"
 ) {{ text }}
   //- @slot слот для размещения контента перед заголовком
   slot(name="prepend")
-  
+
   //- @slot слот для размещения контента после заголовка
   slot(name="append")
 </template>
 
 <script setup lang="ts">
 import type { ClassPropsType } from '@/types';
+import type { StyleValue } from 'vue';
 import { computed } from 'vue';
 
 export interface UiTitlePropsImpl {
@@ -24,18 +26,24 @@ export interface UiTitlePropsImpl {
   type?: 'title' | 'subtitle' | 'paragraph' | 'action';
   /** размер заголовка */
   size?: 'xs' | 'sm' | 'md' | 'lg';
+  align?: 'start' | 'center' | 'end';
 }
 
 const props = withDefaults(defineProps<UiTitlePropsImpl>(), {
   level: 2,
   size: 'sm',
   type: 'title',
+  align: 'start',
 });
 
 const className = computed<ClassPropsType>(() => [
   `ui-${props.type}`,
   `ui-${props.type}--${props.size}`,
 ]);
+
+const styles = computed<StyleValue>(() => ({
+  textAlign: props.align,
+}));
 
 const tagName = computed(() => `h${props.level}`);
 
@@ -46,8 +54,8 @@ const tagName = computed(() => `h${props.level}`);
   --primary-font-family: var(--golos-arial-serif-font-family);
   --title-gap: 12px;
   position: relative;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   gap: var(--title-gap);
   font-family: var(--primary-font-family);
 

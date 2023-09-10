@@ -17,7 +17,7 @@ export function createApp() {
       return { t };
     },
   });
-  
+
   app.use(createPinia());
   app.use(i18n);
   return { app };
