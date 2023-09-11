@@ -24,7 +24,7 @@
       ]
     },
 
-    /* Linting */    
+    /* Linting */
     "strict": true,
     "noUnusedLocals": false,
     "noUnusedParameters": false,
@@ -37,6 +37,6 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "src/**/*.json"
-  ],
+, "src/views/index.ts", "src/views/components/index.ts"  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

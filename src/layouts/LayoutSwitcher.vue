@@ -5,22 +5,21 @@ component(:is="layout")
 
 <script setup lang="ts">
 import { computed } from 'vue';
-
-/* eslint-disable */
+import { useRoute } from 'vue-router';
+import { PageLayouts } from '@/entities/enums';
 import DefaultLayout from './DefaultLayout.vue';
-/* eslint-enable */
+import LoginLayout from './LoginLayout.vue';
 
-interface ILayoutSwitcherProps {
-  /** Шаблон */
-  layout?: "default"
-}
-
-const props = withDefaults(defineProps<ILayoutSwitcherProps>(), {
-  layout: 'default',
-});
+const route = useRoute();
 
 const layout = computed<any>(() => {
-  switch (props.layout) {
+  switch (route.meta.layout) {
+  case PageLayouts.DefaultLayout: {
+    return  DefaultLayout;
+  }
+  case PageLayouts.LoginLayout: {
+    return  LoginLayout;
+  }
   default: {
     return  DefaultLayout;
   }

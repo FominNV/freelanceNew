@@ -9,5 +9,6 @@ main.main-view
   --main-view-min-height: var(--main-min-height);
 
   min-height: var(--main-view-min-height);
+  padding: 60px 0;
 }
 </style>

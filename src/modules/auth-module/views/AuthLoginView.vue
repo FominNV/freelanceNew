@@ -1,12 +1,10 @@
 <template lang="pug">
 page-view
-  div Home
+  auth-view
 </template>
 
 <script setup lang="ts">
 
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

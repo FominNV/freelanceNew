@@ -2,21 +2,22 @@
 import { IItemDto } from "@/types";
 import { IUiNavbarItem } from "../../UI/components/ui-navbar/types";
 import { createGuid } from "../../utils/Maths";
+import { PathNames } from "../enums";
 
 export const HeaderNavbarItems: IUiNavbarItem[] = [
   {
     id: createGuid(),
-    path: '/',
+    path: PathNames.Home,
     tname: 'navbar.main',
   },
   {
     id: createGuid(),
-    path: '/settings',
+    path: PathNames.Settings,
     tname: 'navbar.settings',
   },
   {
     id: createGuid(),
-    path: '/about',
+    path: PathNames.About,
     tname: 'navbar.about',
   },
 ];

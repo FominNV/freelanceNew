@@ -1,6 +1,8 @@
 <template lang="pug">
 page-view
-  div Home
+  ui-title(
+    level="1"
+    text="About")
 </template>
 
 <script setup lang="ts">

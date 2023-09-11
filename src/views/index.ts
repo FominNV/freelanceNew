@@ -1,7 +1,7 @@
 import { App } from 'vue';
 import components from './components';
 
-export default class UI {
+export default class Views {
   static install(vue: App<Element>) {
     (Object.entries(components).forEach(([name, component]) => {
       vue.component(name, component);
