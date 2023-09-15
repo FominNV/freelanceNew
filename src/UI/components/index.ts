@@ -7,6 +7,9 @@ import { UiButton } from './ui-button';
 import { UiCard } from './ui-card';
 import { UiLink } from './ui-link';
 import { UiTitle } from './ui-title';
+import { UiInput } from './ui-input';
+import { UiCheckbox } from './ui-checkbox';
+import { UiText } from './ui-text';
 
 const components = {
   UiTextAnimater,
@@ -18,6 +21,9 @@ const components = {
   UiCard,
   UiLink,
   UiTitle,
+  UiInput,
+  UiCheckbox,
+  UiText,
 };
 
 export default components;
@@ -33,5 +39,8 @@ declare module 'vue' {
     UiCard: typeof components['UiCard'];
     UiLink: typeof components['UiLink'];
     UiTitle: typeof components['UiTitle'];
+    UiInput: typeof components['UiInput'];
+    UiCheckbox: typeof components['UiCheckbox'];
+    UiText: typeof components['UiText'];
   }
 }

@@ -1,5 +1,6 @@
 <template lang="pug">
 button(:class="classNames")
+  template(v-if="text") {{ text }}
   slot
 </template>
 
@@ -8,16 +9,22 @@ import { computed } from 'vue';
 
 interface IIUButtonProps {
   size?: 'sm' | 'md' | 'lg';
+  text: string;
   round?: boolean;
-  theme?: 'primary' | 'secondary' | 'action';
+  theme?: 'none' | 'primary' | 'secondary' | 'action';
   shadow?: boolean;
+  p0?: boolean;
+  fullWidth?: boolean;
+  color?: 'light' | 'dark';
 }
 
 const props = withDefaults(defineProps<IIUButtonProps>(), {
   size: 'md',
   round: false,
-  theme: 'primary',
+  theme: 'none',
   shadow: false,
+  p0: false,
+  fullWidth: false,
 });
 
 const classNames = computed<ClassPropsType>(() => [
@@ -26,16 +33,26 @@ const classNames = computed<ClassPropsType>(() => [
   `ui-button--size-${props.size}`,
   { 'ui-button--round': props.round },
   { 'ui-button--shadow': props.shadow },
+  { 'ui-button--padding-off': props.p0 },
+  { 'ui-button--full-width': props.fullWidth },
+  { 'ui-button--color-dark': props.color === 'dark' },
+  { 'ui-button--color-light': props.color === 'light' },
 ]);
 </script>
 
 <style lang="scss">
 .ui-button {
+  // none theme
+
   // theme primary
   --ui-button-background-color-primary: var(--button-background-color-primary);
-  --ui-button-font-color-primary: var(--button-font-color-primary);
+  --ui-button-font-color-primary: var(--button-font-color-primary);  
+  
+  // theme primary
   --ui-button-background-color-secondary: var(--button-background-color-secondary);
   --ui-button-font-color-secondary: var(--button-font-color-secondary);
+
+  // theme primary  
   --ui-button-background-color-action: var(--button-background-color-action);
   --ui-button-font-color-action: var(--button-font-color-action);
 
@@ -48,10 +65,13 @@ const classNames = computed<ClassPropsType>(() => [
   --ui-button-lg-border-radius: 6px;
 
   @include btn-reset();
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: all 0.25s;
   
   &:active {
-    transform: scale(.95)
+    transform: scale(.95);
   }
   
   &:hover {
@@ -97,6 +117,22 @@ const classNames = computed<ClassPropsType>(() => [
 
   &--round {
     border-radius: 22px;
+  }
+
+  &--padding-off {
+    padding: 0;
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--color-dark {
+    color: var(--ui-button-color-dark);
+  }
+
+  &--color-light {
+    color: var(--ui-button-color-light);
   }
 }
 </style>

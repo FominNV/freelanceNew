@@ -9,7 +9,7 @@ div.theme-switcher-view
   ui-switch(
     :value="theme"
     :falseValue="lightTheme"
-    :trueValue="darkTheme"
+    :trueValue="darkTheme"    
     @change="changeTheme"
   )
   svg-icon(

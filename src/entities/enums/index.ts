@@ -4,3 +4,4 @@ export * from './language-locale';
 export * from './layout-theme';
 export * from './module-names';
 export * from './path-names';
+export * from './text-colors';

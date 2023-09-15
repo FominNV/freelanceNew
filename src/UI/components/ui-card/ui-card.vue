@@ -4,6 +4,7 @@ div(:class="cardClassname")
     v-if="title"
     :class="cardTitleClassname") 
       ui-title(
+        v-ui-color="titleColor"
         size="lg"
         level="3"
         type="subtitle"
@@ -15,11 +16,13 @@ div(:class="cardClassname")
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { ClassPropsType } from '@/types';
+import { TextColor } from '@/entities/enums';
 
 interface IUiCardProps {
   title?: string;
   titleBorder: boolean;
   bordered: boolean;
+  titleColor?: TextColor;
 }
 
 const props = withDefaults(defineProps<IUiCardProps>(), {

@@ -1,4 +1,4 @@
-import AuthView from './AuthView.vue';
+import AuthFormView from './AuthFormView.vue';
 import FooterView from './FooterView.vue';
 import HeaderView from './HeaderView.vue';
 import LanguageSwitcherView from './LanguageSwitcherView.vue';
@@ -7,7 +7,7 @@ import PageView from './PageView.vue';
 import ThemeSwitcherView from './ThemeSwitcherView.vue';
 
 const components = {
-  AuthView,
+  AuthFormView,
   FooterView,
   HeaderView,
   LanguageSwitcherView,
@@ -20,7 +20,7 @@ export default components;
 
 declare module 'vue' {
   interface GlobalComponents {
-    AuthView: typeof components['AuthView'];
+    AuthFormView: typeof components['AuthFormView'];
     FooterView: typeof components['FooterView'];
     HeaderView: typeof components['HeaderView'];
     LanguageSwitcherView: typeof components['LanguageSwitcherView'];

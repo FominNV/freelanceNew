@@ -9,7 +9,7 @@ interface DirectiveBindindOptions {
   value: UiTypoOptions;
 }
 
-function handler(el: HTMLElement, binding: DirectiveBindindOptions) {
+export const UiTypo = (el: HTMLElement, binding: DirectiveBindindOptions) => {
   const payload = binding.value || {
     type: 'paragraph',
     size: 'md',
@@ -20,13 +20,4 @@ function handler(el: HTMLElement, binding: DirectiveBindindOptions) {
   el.classList.remove(`ui-${payload.type}--md`);
   el.classList.remove(`ui-${payload.type}--lg`);
   el.classList.add(`ui-${payload.type}--${payload.size}`);
-}
-
-/**
- * Директива для смены типа/размера текста
- * @example v-ui-typo="{ type: 'title', size: 'sm' }"
- */
-export const UiTypo = {
-  bind: handler,
-  update: handler,
 };

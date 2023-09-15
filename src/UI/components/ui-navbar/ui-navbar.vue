@@ -41,7 +41,7 @@ function checkActiveRoute(path: string): boolean {
 
 <style lang="scss">
 .ui-navbar {
-  // --ui-navbar-item-color: var(--navbar-font-color);
+  --ui-navbar-item-color: var(--navbar-font-color);
   --ui-navbar-item-hover-color: var(--navbar-font-hover-color);
 
   height: 100%;
@@ -57,6 +57,7 @@ function checkActiveRoute(path: string): boolean {
     @include btn-reset();
     padding: 12px 8px;
     font-size: 19px;
+    color: var(--ui-navbar-item-color);
     border-bottom: 2px solid transparent;
     transition: all 0.25s;
 

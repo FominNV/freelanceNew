@@ -25,6 +25,26 @@ export const rus: ILanguageLocale = {
       },
     },
   },
+  auth: {
+    login: {
+      title: 'Вход',
+      input: {
+        email: 'Почта',
+        password: 'Пароль',
+      },
+      checkbox: {
+        remember: 'Запомнить меня',
+      },
+      button: {
+        forgot: 'Забыли Пароль',
+        login: 'Войти',
+        register: 'Регистрация',
+      },
+      text: {
+        account: 'Не зарегистрированы?',
+      },      
+    },
+  },
   language: {
     locale: 'Русский',
   },

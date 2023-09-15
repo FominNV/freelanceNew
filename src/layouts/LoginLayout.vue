@@ -1,5 +1,5 @@
 <template lang="pug">
-div.login-layout
+div(class="login-layout theme--dark")
   ui-container
     div.login-layout__content
       slot
@@ -15,7 +15,7 @@ div.login-layout
   width: 100%;
   height: 100vh;
   min-height: 600px;
-  background-color: var(--login-layout-background-color);
+  background-color: var(--color-low-blue-4);
 
   &__content {
     height: 100%;

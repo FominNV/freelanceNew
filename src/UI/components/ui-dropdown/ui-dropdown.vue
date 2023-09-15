@@ -1,5 +1,5 @@
 <template lang="pug">
-div(class="ui-dropdown")
+div(:class="dropdownClassName")
   label(
     class="ui-dropdown__title"
     aria-label="dropdown"
@@ -22,13 +22,18 @@ import { computed, ref } from 'vue';
 
 interface IUiDropdownProps {
   title?: string;
+  size?: 'sm' | 'md';
 }
 
-defineProps<IUiDropdownProps>();
-
+const props = defineProps<IUiDropdownProps>();
 const input = ref<HTMLInputElement | null>(null);
-
 const collapsed = ref<boolean>(true);
+
+const dropdownClassName = computed<ClassPropsType>(() => [
+  'ui-dropdown',
+  `ui-dropdown--size-${props.size}`,
+]);
+
 const contentClassName = computed<ClassPropsType>(() => [
   'ui-dropdown__content',
   {
@@ -52,6 +57,7 @@ function onFocus() {
 <style lang="scss">
 .ui-dropdown {
   --ui-dropdown-background-color: var(--dropdown-body-background-color);
+  --ui-dropdown-font-color: var(--font-color-gray);
 
   position: relative;
   display: flex;
@@ -63,6 +69,7 @@ function onFocus() {
     justify-content: center;
     align-items: center;
     padding: 8px 6px;
+    color: var(--ui-dropdown-font-color);
     cursor: pointer;
   }
 
@@ -75,11 +82,13 @@ function onFocus() {
     flex-direction: column;
     row-gap: 6px;
     overflow: hidden;
-    transition: all 0.7s;
+    transition: max-height 0.7s;
+    z-index: 5;
 
     &--collapsed {
       transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
       max-height: 0;
+      padding: 0;
 
       // @supports (-webkit-touch-callout: none) {
       //   height: 0px;
@@ -92,6 +101,14 @@ function onFocus() {
     width: 0;
     height: 0;
     z-index: -1;
+  }
+
+  &--size-sm {
+    background: none;
+    
+    .ui-dropdown__title {
+      padding: 0;
+    }
   }
 }
 </style>

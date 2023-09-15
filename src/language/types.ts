@@ -23,6 +23,26 @@ export interface ILanguageLocale {
       }
     }
   },
+  auth: {
+    login: {
+      title: string;
+      input: {
+        email: string;
+        password: string;
+      }
+      checkbox: {
+        remember: string;
+      }
+      button: {
+        forgot: string;
+        login: string;
+        register: string;
+      }
+      text: {
+        account: string;
+      }
+    }
+  },
   language: {
     locale: string;
   }

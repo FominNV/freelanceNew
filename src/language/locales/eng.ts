@@ -25,6 +25,26 @@ export const eng: ILanguageLocale = {
       }, 
     },
   },
+  auth: {
+    login: {
+      title: 'Login',
+      input: {
+        email: 'Email',
+        password: 'Password',
+      },
+      checkbox: {
+        remember: 'Remember me',
+      },
+      button: {
+        forgot: 'Forgot Password',
+        login: 'Login',
+        register: 'Register',
+      },
+      text: {
+        account: "Don't you have account?",
+      }, 
+    },
+  },
   language: {
     locale: 'English',
   },

@@ -68,7 +68,7 @@ const props = withDefaults(defineProps<UiLinkPropsImpl>(), {
   text: '',
   disabled: false,
   underline: false,
-  routerLink: false,
+  routerLink: true,
   target: 'self',
   size: 'sm',
 });

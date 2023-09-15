@@ -16,12 +16,6 @@ const themeClassName = computed<string>(() => `theme--${mainStore.layoutTheme}`)
 </script>
 
 <style lang="scss">
-* {
-    --font-color: var(--font-color-primary);
-
-    color: var(--font-color);
-  }
-
 .default-layout {
   --default-layout-gradient-background-color-primary: var(--body-background-color-primary);
   --default-layout-gradient-background-color-secondary: var(--body-background-color-secondary);

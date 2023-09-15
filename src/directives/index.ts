@@ -1,19 +1,21 @@
-import * as directives from './tools';
+import { UiColor } from "./ui-color";
+import { UiTypo } from "./ui-typo";
+
+const directives: Array<{name: string, body: any}> = [
+  {
+    name: 'ui-color',
+    body: UiColor,
+  },
+  {
+    name: 'ui-typo',
+    body: UiTypo,
+  },
+];
 
 export default class Directive {
   public static install(app: any) {
-    // directives.map(([name, body]) => {
-    //   app.directive(name, { ...body });
-    // });
-
-    if (directives) {
-      Object.keys(directives).forEach((key: string) => {
-        const directive = directives[key];
-        app.directive(key, directive);
-      });
-      return true;
-    }
-    return false;
-
-  }
+    directives.map((elem) => {
+      app.directive(elem.name, elem.body);
+    });
+  }  
 }
