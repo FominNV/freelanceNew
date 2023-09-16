@@ -3,4 +3,5 @@ export enum PathNames {
   Settings = '/settings',
   About = '/about',
   Login = '/login',
+  Register = '/register',
 }

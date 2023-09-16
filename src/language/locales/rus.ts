@@ -11,6 +11,7 @@ export const rus: ILanguageLocale = {
       findJob: 'Найти работу',
       offerJob: 'Предложить работу',
     },
+    login: 'Войти',
   },
   footer: {
     cards: {
@@ -26,6 +27,9 @@ export const rus: ILanguageLocale = {
     },
   },
   auth: {
+    link: {
+      main: 'Главная',
+    },
     login: {
       title: 'Вход',
       input: {
@@ -42,7 +46,26 @@ export const rus: ILanguageLocale = {
       },
       text: {
         account: 'Не зарегистрированы?',
-      },      
+      },
+    },
+    register: {
+      title: 'Регистрация',
+      input: {
+        user: 'Пользователь',
+        email: 'Почта',
+        password1: 'Пароль',
+        password2: 'Подтверждение пароля',
+      },
+      checkbox: {
+        agree: 'Согласен с условиями пользования',
+      },
+      button: {
+        register: 'Регистрация',
+        login: 'Войти',
+      },
+      text: {
+        account: 'Уже зарегистрированы?',
+      },
     },
   },
   language: {

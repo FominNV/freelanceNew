@@ -16,6 +16,10 @@ header.header-view
       div.header-view__settings
         theme-switcher-view
         language-switcher-view
+        ui-button(
+          :text="$t('header.login')"
+          theme="primary"
+          @click="redirectToLogin")
 </template>
 
 <script setup lang="ts">
@@ -25,9 +29,19 @@ import ThemeSwitcherView from './ThemeSwitcherView.vue';
 import LanguageSwitcherView from './LanguageSwitcherView.vue';
 import { ref } from 'vue';
 import type { IItemDto } from '@/types';
+import { useRouter } from 'vue-router';
+import { RouteNames } from '@/entities/enums';
+
+const router = useRouter();
 
 const navbarItems = ref<IUiNavbarItem[]>(HeaderNavbarItems);
 const jobButtons = ref<IItemDto[]>(HeaderJobButtons);
+
+function redirectToLogin() {
+  router.push({
+    name: RouteNames.LOGIN,
+  });
+}
 </script>
 
 <style lang="scss">
@@ -59,7 +73,7 @@ const jobButtons = ref<IItemDto[]>(HeaderJobButtons);
   &__settings {
     display: flex;
     align-items: center;
-    column-gap: 32px;
+    column-gap: 16px;
   }
 }
 </style>

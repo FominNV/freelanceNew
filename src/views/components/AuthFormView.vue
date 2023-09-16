@@ -4,7 +4,9 @@ div.auth-view
     div.auth-view__panel
       ui-link(
         to="/"
-        text="main")
+        size="md"
+        routerLink
+        :text="$t('auth.link.main')")
       language-switcher-view(size="xs")
 
     ui-title(
@@ -16,7 +18,7 @@ div.auth-view
 
     div.auth-view__body
       form(
-        class="auth-view__form"      
+        class="auth-view__form"
         @submit.prevent
       )
         slot
@@ -48,11 +50,11 @@ defineProps<IAuthFormViewProps>();
 <style lang="scss">
 .auth-view {
   --auth-form-view-background-color: var(--background-color-white);
-  --auth-form-view-border-color: var(--border-color-white);
+  --auth-form-view-border-color: var(--color-white);
   --auth-form-view-border-radius: 12px;
 
   width: 100%;
-  max-width: 460px;
+  max-width: 400px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -65,7 +67,7 @@ defineProps<IAuthFormViewProps>();
 
   &__panel {
     width: 100%;
-    position: absolute;    
+    position: absolute;
     display: flex;
     justify-content: space-between;
     top: -30px;
@@ -78,7 +80,7 @@ defineProps<IAuthFormViewProps>();
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 32px;
+    row-gap: 16px;
   }
 
   &__body {

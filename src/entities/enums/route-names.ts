@@ -3,4 +3,5 @@ export enum RouteNames {
   SETTINGS = 'SETTINGS',
   ABOUT = 'ABOUT',
   LOGIN = 'LOGIN',
+  REGISTER = 'REGISTER',
 }

@@ -5,6 +5,8 @@ export const actions = {
     this.language = payload;
   },
   setLayoutTheme(payload: LayoutTheme) {
+    const body: HTMLBodyElement = document.querySelector('body');
+    body.className = `theme--${payload}`;
     this.layoutTheme = payload;
   },
 };

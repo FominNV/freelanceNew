@@ -9,7 +9,7 @@ template(v-if="index !== undefined")
         v-for="(item, i) in links"
         :key="i"
       )
-        svg-icon(          
+        svg-icon(
           type="mdi"
           :path="item"
           size="48"
@@ -17,7 +17,7 @@ template(v-if="index !== undefined")
 
   template(v-if="index === 2")
     div.footer-content__text {{ $t('footer.cards.content.address') }}
-    
+
 </template>
 
 <script setup lang="ts">
@@ -32,14 +32,14 @@ const links = ref<string[]>([mdiYoutube, mdiGooglePlus, mdiTwitter, mdiTwitch ])
 
 <style lang="scss">
 .footer-content__text {
-  --footer-content-color: var(--font-color-gray);
-  
+  --footer-content-color: var(--color-gray-3);
+
   line-height: 1.2rem;
   color: var(--footer-content-color);
 }
 
 .footer-content__links {
-  --footer-content-link-color: var(--font-color-gray);
+  --footer-content-link-color: var(--color-gray-3);
   --footer-content-link-hover-color: var(--footer-text-hover-color);
 
   display: flex;

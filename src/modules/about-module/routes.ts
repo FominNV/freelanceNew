@@ -5,7 +5,7 @@ export const routes: RouteRecordRaw[] = [
   {
     path: PathNames.About,
     name: RouteNames.ABOUT,
-    component: () => import('@/modules/about-module/views/AboutIndexView.vue'),
+    component: () => import('@/modules/about-module/views/AboutModuleIndex.vue'),
     meta: {
       layout: PageLayouts.DefaultLayout,
     },

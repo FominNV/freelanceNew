@@ -10,6 +10,7 @@ footer.footer-view
         ui-card(
           :title="$t(item.title)"
           :title-color="'white'"
+          :body-color="'white'"
           titleBorder
         )
           footer-content(:index="i")

@@ -25,7 +25,7 @@
     <slot>
       <ui-text
         type="action"
-        size="sm"
+        :size="size"
         :text="text"
       />
     </slot>
@@ -68,7 +68,7 @@ const props = withDefaults(defineProps<UiLinkPropsImpl>(), {
   text: '',
   disabled: false,
   underline: false,
-  routerLink: true,
+  routerLink: false,
   target: 'self',
   size: 'sm',
 });
@@ -88,74 +88,17 @@ const classList = computed<ClassPropsType>(() => [
 ]);
 </script>
 
-<style>
+<style lang="scss">
 .ui-link {
-  /** default theme */
-  --link-default-color: var(--color-text-primary);
-  --link-default-color-hover: var(--color-primary-300);
-  --link-default-color-active: var(--color-primary-500);
-  --link-default-color-disabled: var(--color-text-light);
+  --ui-link-text-color: var(--color-black);
 
-  /** primary theme */
-  --link-primary-color: var(--color-primary-500);
-  --link-primary-color-hover: var(--color-primary-300);
-  --link-primary-color-active: var(--color-primary-600);
-  --link-primary-color-disabled: var(--color-text-light);
-
+  color: var(--ui-link-text-color);
   text-decoration: none;
   transition: color ease .2s;
   cursor: pointer;
-}
 
-/** default theme */
-
-/* .ui-link--default {
-  color: var(--link-default-color);
-} */
-
-/* .ui-link--default:focus {
-  color: var(--link-default-color);
-}
-
-.ui-link--default:hover {
-  color: var(--link-default-color-hover);
-  cursor: pointer;
-}
-
-.ui-link--default:active {
-  color: var(--link-default-color-active);
-}
-
-.ui-link--default.ui-link--disabled,
-.ui-link--default.ui-link--disabled:hover {
-  color: var(--link-default-color-disabled);
-} */
-
-/** primary theme */
-
-/* .ui-link--primary {
-  color: var(--link-primary-color);
-}
-
-.ui-link--primary:hover {
-  color: var(--link-primary-color-hover);
-}
-
-.ui-link--primary.ui-link--disabled,
-.ui-link--primary.ui-link--disabled:hover {
-  color: var(--link-primary-color-disabled);
-} */
-
-.ui-link--primary:active {
-  color: var(--link-primary-color-active);
-}
-
-.ui-link--disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-.ui-link--underline .ui-text {
-  text-decoration: underline;
+  &:visited {
+    color: var(--ui-link-text-color);
+  }
 }
 </style>

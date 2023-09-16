@@ -15,15 +15,15 @@
       :size="size")
       ui-button(
           v-for="item in dropdownItems"
-          :key="item.locale"          
+          :key="item.locale"
           p0
           @click="setLanguage($i18n, item.locale)"
         ) {{ item.locale }}
 
-  template(v-if="size === 'xs'")    
+  template(v-if="size === 'xs'")
     ui-button(
       p0
-      :text="$i18n.locale"
+      :text="$i18n.locale.toUpperCase()"
       @click="toggleLanguage($i18n)")
 </template>
 

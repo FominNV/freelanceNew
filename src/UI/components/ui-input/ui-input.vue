@@ -4,7 +4,7 @@ div.ui-input
     v-model="model"
     :class="inputClassName"
     :type="inputType"
-  )  
+  )
   label(
     v-if="label"
     :class="labelClassName"
@@ -89,16 +89,15 @@ function toggleShowInputText() {
 
 <style lang="scss">
 .ui-input {
-  --ui-input-text-color: var(--font-color-pale-blue-dark);
-  --ui-input-border-color: var(--background-color-pale-blue-dark);
+  --ui-input-border-color: var(--color-blue-7);
 
-  --ui-input-label-text-color: var(--font-color-white-low-blue);
+  --ui-input-label-text-color: var(--color-blue-7);
   --ui-input-label-font-size: 14px;
   --ui-input-label-padding-top: 8px;
   --ui-input-label-padding-bottom: 8px;
   --ui-input-label-top: calc(var(--ui-input-label-font-size) + var(--ui-input-label-padding-top) + var(--ui-input-label-padding-bottom));
-  
-  --ui-input-input-text-color: var(--font-color-pale-blue-dark);
+
+  --ui-input-input-text-color: var(--color-blue-7);
   --ui-input-input-font-size: 16px;
   --ui-input-input-padding-top: 8px;
   --ui-input-input-padding-left: 6px;
@@ -106,7 +105,7 @@ function toggleShowInputText() {
 
   --ui-input-icon-wrap-height: calc(var(--ui-input-input-font-size) + var(--ui-input-input-padding-top) + var(--ui-input-input-padding-bottom));
   --ui-input-icon-wrap-width: 32px;
-  
+
   position: relative;
   display: flex;
   flex-direction: column-reverse;
@@ -114,12 +113,13 @@ function toggleShowInputText() {
 
   &__label {
     position: relative;
-    // color: var(--ui-input-label-text-color);
-    font-size: var(--ui-input-label-font-size);
+    top: var(--ui-input-label-top);
     padding-top: var(--ui-input-label-padding-top);
     padding-bottom: var(--ui-input-label-padding-bottom);
-    top: var(--ui-input-label-top);
+    font-size: var(--ui-input-label-font-size);
+    color: var(--ui-input-label-text-color);
     transition: top 0.25s;
+    z-index: 0;
 
     &--lifted {
       top: 0;
@@ -129,11 +129,12 @@ function toggleShowInputText() {
   &__input {
     @include inp-reset();
     width: 100%;
-    border-bottom: 2px solid var(--ui-input-border-color);
-    font-size: var(--ui-input-input-font-size);
     padding-top: var(--ui-input-input-padding-top);
     padding-left: var(--ui-input-input-padding-left);
     padding-bottom: var(--ui-input-input-padding-bottom);
+    border-bottom: 2px solid var(--ui-input-border-color);
+    color: var(--ui-input-input-text-color);
+    font-size: var(--ui-input-input-font-size);
     z-index: 2;
 
     &:focus + .ui-input__label {

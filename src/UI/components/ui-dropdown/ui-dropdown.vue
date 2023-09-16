@@ -3,7 +3,7 @@ div(:class="dropdownClassName")
   label(
     class="ui-dropdown__title"
     aria-label="dropdown"
-    @click="toggleCollapse"    
+    @click="toggleCollapse"
     ) {{ title }}
     slot(name="title")
   div(:class="contentClassName")
@@ -56,13 +56,11 @@ function onFocus() {
 
 <style lang="scss">
 .ui-dropdown {
-  --ui-dropdown-background-color: var(--dropdown-body-background-color);
-  --ui-dropdown-font-color: var(--font-color-gray);
+  --ui-dropdown-font-color: var(--dropdown-text-color);
 
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: var(--ui-dropdown-background-color);
 
   &__title {
     display: flex;
@@ -97,6 +95,7 @@ function onFocus() {
   }
 
   &__input {
+    @include inp-reset();
     position: absolute;
     width: 0;
     height: 0;
@@ -105,7 +104,7 @@ function onFocus() {
 
   &--size-sm {
     background: none;
-    
+
     .ui-dropdown__title {
       padding: 0;
     }

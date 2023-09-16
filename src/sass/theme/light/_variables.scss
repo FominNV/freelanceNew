@@ -1,3 +1,47 @@
 .theme--light {
-  --background-color-block-primary: var(--background-color-green);
+  // body
+  --body-background-color-primary: var(--color-white-1);
+  --body-background-color-secondary: var(--color-white-1);
+
+  // block
+  --block-background-color-primary: var(--color-blue-dark-4);
+  --block-background-color-secondary: var(--color-blue-dark-2);
+  --block-border-color-primary: var(--color-low-blue-6);
+
+  // ui-navbar
+  --navbar-font-color: var(--color-black);
+  --navbar-font-hover-color: var(--color-low-blue-4);
+
+  // ui-switch
+  --switch-background-color: var(--color-white-3);
+  --switch-toggle-background-color: var(--color-low-blue-4);
+
+  // theme-switcher
+  --theme-switcher-icon-color-active: var(--color-low-blue-4);
+  --theme-switcher-icon-color-passive: var(--color-gray-5);
+
+  // ui-dropdown
+  --dropdown-body-background-color: var(--color-low-blue-1);
+
+  // ui-button
+  --button-background-color-primary: var(--color-low-blue-4);
+  --button-font-color-primary: var(--color-white);
+
+  --button-background-color-secondary: var(--color-blue-dark-1);
+  --button-font-color-secondary: var(--color-white);
+
+  --button-background-color-action: var(--color-purple-6);
+  --button-font-color-action: var(--color-white);
+
+  // footer
+  --footer-background-color: var(--color-blue-dark-1);
+  --footer-text-color: var(--color-gray-3);
+  --footer-text-hover-color: var(--color-low-blue-4);
+
+  // ui-card
+  --card-title-border-color: var(--color-white);
+  --card-content-color: var(--color-gray-1);
+
+  // ui-text-animater
+  --text-animater-text-color: var(--color-low-blue-5);
 }

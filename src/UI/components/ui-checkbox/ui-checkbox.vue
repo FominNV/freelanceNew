@@ -28,7 +28,7 @@ import { TextColor } from '@/entities/enums';
 interface IUiCheckboxProps {
   modelValue: boolean;
   title: string;
-  titleColor?: TextColor;  
+  titleColor?: TextColor;
 }
 
 const props = withDefaults(defineProps<IUiCheckboxProps>(), {
@@ -52,9 +52,8 @@ const model = computed<boolean>({
 <style lang="scss">
 .ui-checkbox {
   --ui-checkbox-size-sm: 16px;
-  --ui-checkbox-background-color: var(--background-color-white);
-  --ui-checkbox-border-color: var(--border-color-pale-blue-dark);
-  --ui-checkbox-icon-color: var(--font-color-black);
+  --ui-checkbox-background-color: var(--color-white);
+  --ui-checkbox-border-color: var(--color-black-3);
 
   width: fit-content;
   position: relative;

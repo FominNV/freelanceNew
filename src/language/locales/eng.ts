@@ -11,6 +11,7 @@ export const eng: ILanguageLocale = {
       findJob: 'Find job',
       offerJob: 'Offer job',
     },
+    login: 'Login',
   },
   footer: {
     cards: {
@@ -22,10 +23,13 @@ export const eng: ILanguageLocale = {
       content: {
         advertisment: 'Pay for all online advertising in one window in a couple of clicks. No need to remember 10 passwords and re-enter payment information each time.',
         address: 'Russia, Krasnodar, Krasnaya st., 666',
-      }, 
+      },
     },
   },
   auth: {
+    link: {
+      main: 'Main',
+    },
     login: {
       title: 'Login',
       input: {
@@ -42,7 +46,26 @@ export const eng: ILanguageLocale = {
       },
       text: {
         account: "Don't you have account?",
-      }, 
+      },
+    },
+    register: {
+      title: 'Registration',
+      input: {
+        user: 'Username',
+        email: 'Email',
+        password1: 'Password',
+        password2: 'Confirm Password',
+      },
+      checkbox: {
+        agree: 'I agree to the terms and conditions',
+      },
+      button: {
+        register: 'Register',
+        login: 'Login',
+      },
+      text: {
+        account: 'Already have an account?',
+      },
     },
   },
   language: {

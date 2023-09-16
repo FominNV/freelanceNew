@@ -2,6 +2,7 @@
   <component
     :is="tag"
     v-ui-color:text="color"
+    v-ui-typo="{ type, size }"
     :class="classes"
   >
     <ui-tooltip

@@ -9,6 +9,7 @@ export interface ILanguageLocale {
       findJob: string;
       offerJob: string;
     }
+    login: string;
   },
   footer: {
     cards: {
@@ -24,6 +25,9 @@ export interface ILanguageLocale {
     }
   },
   auth: {
+    link: {
+      main: string;
+    }
     login: {
       title: string;
       input: {
@@ -37,6 +41,25 @@ export interface ILanguageLocale {
         forgot: string;
         login: string;
         register: string;
+      }
+      text: {
+        account: string;
+      }
+    }
+    register: {
+      title: string;
+      input: {
+        user: string;
+        email: string;
+        password1: string;
+        password2: string;
+      }
+      checkbox: {
+        agree: string;
+      }
+      button: {
+        register: string;
+        login: string;
       }
       text: {
         account: string;

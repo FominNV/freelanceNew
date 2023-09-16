@@ -1,46 +1,47 @@
 .theme--dark {
   // body
-  --body-background-color-primary: var(--background-color-pale-blue-darkest);
-  --body-background-color-secondary: var(--background-color-pale-blue);
+  --body-background-color-primary: var(--color-blue-dark-7);
+  --body-background-color-secondary: var(--color-low-blue-4);
 
   // block
-  --block-background-color-primary: var(--background-color-pale-blue-dark);
-  --block-background-color-secondary: var(--background-color-pale-blue-low-dark);
-  --block-border-color-primary: var(--border-color-pale-blue-dark);
+  --block-background-color-primary: var(--color-blue-dark-4);
+  --block-background-color-secondary: var(--color-blue-dark-2);
+  --block-border-color-primary: var(--color-low-blue-6);
 
   // ui-navbar
-  --navbar-font-color: var(--font-color-white-low-blue);
-  --navbar-font-hover-color: var(--font-color-pale-blue);
-
-  // font
-  --font-color-primary: var(--font-color-white-low-blue);
-  --font-color-secondary: var(--font-color-pale-blue);
+  --navbar-font-color: var(--color-white);
+  --navbar-font-hover-color: var(--color-low-blue-3);
 
   // ui-switch
-  --switch-background-color: var(--background-color-white);
-  --switch-toggle-background-color: var(--background-color-pale-blue);
+  --switch-background-color: var(--color-white-3);
+  --switch-toggle-background-color: var(--color-low-blue-4);
 
   // theme-switcher
-  --theme-switcher-icon-color-dark: var(--font-color-pale-blue);
-  --theme-switcher-icon-color-light: var(--font-color-white-low-blue);
+  --theme-switcher-icon-color-active: var(--color-low-blue-4);
+  --theme-switcher-icon-color-passive: var(--color-white-3);
 
   // ui-dropdown
-  --dropdown-body-background-color: var(--background-color-pale-blue-dark);
+  --dropdown-text-color: var(--color-low-blue-1);
 
   // ui-button
-  --button-background-color-primary: var(--background-color-pale-blue-dark);
-  --button-font-color-primary: var(--font-color-pale-blue);
-  --button-background-color-secondary: var(--background-color-pale-blue-low-dark);
-  --button-font-color-secondary: var(--font-color-white-low-blue);
-  --button-background-color-action: var(--background-color-pink-dark);
-  --button-font-color-action: var(--font-color-white-low-blue);
+  --button-background-color-primary: var(--color-blue-dark-5);
+  --button-font-color-primary: var(--color-low-blue-4);
+
+  --button-background-color-secondary: var(--color-blue-dark-4);
+  --button-font-color-secondary: var(--color-white);
+
+  --button-background-color-action: var(--color-purple-6);
+  --button-font-color-action: var(--color-white);
 
   // footer
-  --footer-background-color: var(--background-color-pale-gray-blue);
-  --footer-text-color: var(--font-color-gray);
-  --footer-text-hover-color: var(--font-color-pale-blue);
+  --footer-background-color: var(--color-blue-dark-1);
+  --footer-text-color: var(--color-gray-3);
+  --footer-text-hover-color: var(--color-low-blue-4);
 
   // ui-card
-  --card-title-border-color: var(--border-color-white);
-  --card-content-color: var(--font-color-gray);
+  --card-title-border-color: var(--color-white);
+  --card-content-color: var(--color-gray-1);
+
+  // ui-text-animater
+  --text-animater-text-color: var(--color-low-blue-3);
 }

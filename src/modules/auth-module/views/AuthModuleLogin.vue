@@ -4,25 +4,25 @@ page-view
     ui-input(
       v-model="email"
       :label="$t('auth.login.input.email')"
-      :icon="mdiAccount"
+      :icon="mdiEmail"
       type="email")
-      
+
     ui-input(
-      v-model="password"      
+      v-model="password"
       :label="$t('auth.login.input.password')"
       type="password")
-    
+
     template(#action1)
       div.auth-login-view__action1
         ui-checkbox(
-          v-model="remember"              
+          v-model="remember"
           :title="$t('auth.login.checkbox.remember')"
           titleColor="black"
           )
         ui-button(
           :text="`${$t('auth.login.button.forgot')}?`"
           p0)
-          
+
     template(#action2)
       ui-button(
         v-ui-color:text="'white'"
@@ -32,16 +32,19 @@ page-view
     template(#action3)
       div.auth-login-view__action3
         p {{ $t('auth.login.text.account') }}
-        ui-button(p0)
-            ui-title(
-              v-ui-typo="{type: 'paragraph', size: 'md'}"
-              level="2"
-              :text="$t('auth.login.button.register')")
+        ui-link(
+          :to="PathNames.Register"
+          routerLink)
+          ui-title(
+            v-ui-typo="{type: 'paragraph', size: 'md'}"
+            level="2"
+            :text="$t('auth.login.button.register')")
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { mdiAccount } from '@mdi/js';
+import { mdiEmail } from '@mdi/js';
+import { PathNames } from '@/entities/enums';
 
 const email = ref<string>('');
 const password = ref<string>('');

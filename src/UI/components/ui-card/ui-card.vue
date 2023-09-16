@@ -2,14 +2,17 @@
 div(:class="cardClassname")
   div(
     v-if="title"
-    :class="cardTitleClassname") 
+    :class="cardTitleClassname")
       ui-title(
-        v-ui-color="titleColor"
+        v-ui-color:text="titleColor"
         size="lg"
         level="3"
         type="subtitle"
         :text="title")
-  .ui-card__content 
+  div(
+    v-ui-color:text="bodyColor"
+    class="ui-card__content"
+  )
     slot
 </template>
 
@@ -23,6 +26,7 @@ interface IUiCardProps {
   titleBorder: boolean;
   bordered: boolean;
   titleColor?: TextColor;
+  bodyColor?: TextColor;
 }
 
 const props = withDefaults(defineProps<IUiCardProps>(), {
@@ -60,7 +64,7 @@ const cardClassname = computed<ClassPropsType>(() => [
   }
 
   &__content {
-    padding: 8px 0;    
+    padding: 8px 0;
   }
 
 }

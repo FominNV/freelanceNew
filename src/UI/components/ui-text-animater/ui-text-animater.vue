@@ -1,5 +1,5 @@
 <template lang="pug">
-p.ui-text-animater {{ text }}  
+p.ui-text-animater {{ text }}
   slot
 </template>
 
@@ -15,9 +15,9 @@ defineProps<IUiTextAnimaterProps>();
 <style>
 .ui-text-animater {
   --ui-text-animater-font-famaly: var(--abril-font-family);
-  --ui-text-animater-font-color: var(--font-color-pale-blue);
-  --ui-text-animater-border-color: var(--font-color-pale-blue);
-  --ui-text-animater-bacground-color: var(--font-color-pale-blue);
+  --ui-text-animater-font-color: var(--text-animater-text-color);
+  --ui-text-animater-border-color: var(--text-animater-text-color);
+  --ui-text-animater-bacground-color: var(--text-animater-text-color);
 
   position: relative;
   width: 120px;

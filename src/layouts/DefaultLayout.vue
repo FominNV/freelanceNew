@@ -1,19 +1,10 @@
 <template lang="pug">
-div.default-layout(:class="themeClassName")
+div.default-layout
   header-view
   main-view
     slot
   footer-view
 </template>
-
-<script setup lang="ts">
-import { computed } from 'vue';
-import { useMainStore } from '@/store';
-
-const mainStore = useMainStore();
-
-const themeClassName = computed<string>(() => `theme--${mainStore.layoutTheme}`);
-</script>
 
 <style lang="scss">
 .default-layout {
@@ -24,6 +15,7 @@ const themeClassName = computed<string>(() => `theme--${mainStore.layoutTheme}`)
   transition-duration: 0.5s;
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(var(--default-layout-gradient-background-color-primary) 50%, var(--default-layout-gradient-background-color-secondary));
+  // background: linear-gradient(var(--default-layout-gradient-background-color-primary) 50%, var(--default-layout-gradient-background-color-secondary));
+  background: var(--default-layout-gradient-background-color-primary);
 }
 </style>

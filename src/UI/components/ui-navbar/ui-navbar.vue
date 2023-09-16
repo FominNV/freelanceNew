@@ -31,7 +31,7 @@ const emit = defineEmits<{(e: 'change-path', path: string): void}>();
 
 function changePath(path: string) {
   router.push(path);
-  emit('change-path', path);  
+  emit('change-path', path);
 }
 
 function checkActiveRoute(path: string): boolean {
@@ -55,8 +55,8 @@ function checkActiveRoute(path: string): boolean {
 
   &__list-item-btn {
     @include btn-reset();
-    padding: 12px 8px;
-    font-size: 19px;
+    padding: 10px 8px;
+    font-size: 18px;
     color: var(--ui-navbar-item-color);
     border-bottom: 2px solid transparent;
     transition: all 0.25s;

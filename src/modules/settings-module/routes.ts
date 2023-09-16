@@ -5,7 +5,7 @@ export const routes: RouteRecordRaw[] = [
   {
     path: PathNames.Settings,
     name: RouteNames.SETTINGS,
-    component: () => import('@/modules/settings-module/views/SettingsIndexView.vue'),
+    component: () => import('@/modules/settings-module/views/SettingsModuleIndex.vue'),
     meta: {
       layout: PageLayouts.DefaultLayout,
     },
