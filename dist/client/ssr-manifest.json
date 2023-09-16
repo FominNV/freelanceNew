@@ -1384,48 +1384,48 @@
   "src/modules/about-module/routes.ts": [
   ],
   "src/modules/about-module/views/AboutModuleIndex.vue": [
-    "/freelance-deploying/assets/AboutModuleIndex-20d4ad97.js"
+    "/freelanceNew/assets/AboutModuleIndex-55be9b98.js"
   ],
   "src/modules/about-module/views/AboutModuleIndex.vue?vue&type=template&lang.js": [
-    "/freelance-deploying/assets/AboutModuleIndex-20d4ad97.js"
+    "/freelanceNew/assets/AboutModuleIndex-55be9b98.js"
   ],
   "src/modules/auth-module/index.ts": [
   ],
   "src/modules/auth-module/routes.ts": [
   ],
   "src/modules/auth-module/views/AuthModuleLogin.vue": [
-    "/freelance-deploying/assets/AuthModuleLogin-aa89b79d.js",
-    "/freelance-deploying/assets/AuthModuleLogin-d1280515.css"
+    "/freelanceNew/assets/AuthModuleLogin-184e1915.js",
+    "/freelanceNew/assets/AuthModuleLogin-d1280515.css"
   ],
   "src/modules/auth-module/views/AuthModuleLogin.vue?vue&type=script&setup=true&lang.ts": [
-    "/freelance-deploying/assets/AuthModuleLogin-aa89b79d.js",
-    "/freelance-deploying/assets/AuthModuleLogin-d1280515.css"
+    "/freelanceNew/assets/AuthModuleLogin-184e1915.js",
+    "/freelanceNew/assets/AuthModuleLogin-d1280515.css"
   ],
   "src/modules/auth-module/views/AuthModuleLogin.vue?vue&type=style&index=0&lang.scss": [
-    "/freelance-deploying/assets/AuthModuleLogin-aa89b79d.js",
-    "/freelance-deploying/assets/AuthModuleLogin-d1280515.css"
+    "/freelanceNew/assets/AuthModuleLogin-184e1915.js",
+    "/freelanceNew/assets/AuthModuleLogin-d1280515.css"
   ],
   "src/modules/auth-module/views/AuthModuleRegister.vue": [
-    "/freelance-deploying/assets/AuthModuleRegister-50d72858.js",
-    "/freelance-deploying/assets/AuthModuleRegister-fd2b893d.css"
+    "/freelanceNew/assets/AuthModuleRegister-b989a6ec.js",
+    "/freelanceNew/assets/AuthModuleRegister-fd2b893d.css"
   ],
   "src/modules/auth-module/views/AuthModuleRegister.vue?vue&type=script&setup=true&lang.ts": [
-    "/freelance-deploying/assets/AuthModuleRegister-50d72858.js",
-    "/freelance-deploying/assets/AuthModuleRegister-fd2b893d.css"
+    "/freelanceNew/assets/AuthModuleRegister-b989a6ec.js",
+    "/freelanceNew/assets/AuthModuleRegister-fd2b893d.css"
   ],
   "src/modules/auth-module/views/AuthModuleRegister.vue?vue&type=style&index=0&lang.scss": [
-    "/freelance-deploying/assets/AuthModuleRegister-50d72858.js",
-    "/freelance-deploying/assets/AuthModuleRegister-fd2b893d.css"
+    "/freelanceNew/assets/AuthModuleRegister-b989a6ec.js",
+    "/freelanceNew/assets/AuthModuleRegister-fd2b893d.css"
   ],
   "src/modules/home-module/index.ts": [
   ],
   "src/modules/home-module/routes.ts": [
   ],
   "src/modules/home-module/views/HomeModuleIndex.vue": [
-    "/freelance-deploying/assets/HomeModuleIndex-10bd0683.js"
+    "/freelanceNew/assets/HomeModuleIndex-52253c8d.js"
   ],
   "src/modules/home-module/views/HomeModuleIndex.vue?vue&type=template&lang.js": [
-    "/freelance-deploying/assets/HomeModuleIndex-10bd0683.js"
+    "/freelanceNew/assets/HomeModuleIndex-52253c8d.js"
   ],
   "src/modules/index.ts": [
   ],
@@ -1434,10 +1434,10 @@
   "src/modules/settings-module/routes.ts": [
   ],
   "src/modules/settings-module/views/SettingsModuleIndex.vue": [
-    "/freelance-deploying/assets/SettingsModuleIndex-952a37a2.js"
+    "/freelanceNew/assets/SettingsModuleIndex-a0bc34fc.js"
   ],
   "src/modules/settings-module/views/SettingsModuleIndex.vue?vue&type=template&lang.js": [
-    "/freelance-deploying/assets/SettingsModuleIndex-952a37a2.js"
+    "/freelanceNew/assets/SettingsModuleIndex-a0bc34fc.js"
   ],
   "src/router/index.ts": [
   ],

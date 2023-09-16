@@ -12,7 +12,7 @@ const locals = { name: "My Pug" };
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'freelance-deploying',
+  base: '/freelanceNew/',
   plugins: [
     vue(),
     pugPlugin(options, locals),

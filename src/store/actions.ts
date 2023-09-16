@@ -5,8 +5,10 @@ export const actions = {
     this.language = payload;
   },
   setLayoutTheme(payload: LayoutTheme) {
-    const body: HTMLBodyElement = document.querySelector('body');
-    body.className = `theme--${payload}`;
+    const app: HTMLDivElement = document.querySelector('#app');
+    app.classList.remove(`theme--light`);
+    app.classList.remove(`theme--dark`);
+    app.classList.add(`theme--${payload}`);
     this.layoutTheme = payload;
   },
 };
