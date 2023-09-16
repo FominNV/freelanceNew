@@ -1384,37 +1384,37 @@
   "src/modules/about-module/routes.ts": [
   ],
   "src/modules/about-module/views/AboutModuleIndex.vue": [
-    "/freelanceNew/assets/AboutModuleIndex-1bceb8ac.js"
+    "/freelanceNew/assets/AboutModuleIndex-55be9b98.js"
   ],
   "src/modules/about-module/views/AboutModuleIndex.vue?vue&type=template&lang.js": [
-    "/freelanceNew/assets/AboutModuleIndex-1bceb8ac.js"
+    "/freelanceNew/assets/AboutModuleIndex-55be9b98.js"
   ],
   "src/modules/auth-module/index.ts": [
   ],
   "src/modules/auth-module/routes.ts": [
   ],
   "src/modules/auth-module/views/AuthModuleLogin.vue": [
-    "/freelanceNew/assets/AuthModuleLogin-5719f93c.js",
+    "/freelanceNew/assets/AuthModuleLogin-184e1915.js",
     "/freelanceNew/assets/AuthModuleLogin-d1280515.css"
   ],
   "src/modules/auth-module/views/AuthModuleLogin.vue?vue&type=script&setup=true&lang.ts": [
-    "/freelanceNew/assets/AuthModuleLogin-5719f93c.js",
+    "/freelanceNew/assets/AuthModuleLogin-184e1915.js",
     "/freelanceNew/assets/AuthModuleLogin-d1280515.css"
   ],
   "src/modules/auth-module/views/AuthModuleLogin.vue?vue&type=style&index=0&lang.scss": [
-    "/freelanceNew/assets/AuthModuleLogin-5719f93c.js",
+    "/freelanceNew/assets/AuthModuleLogin-184e1915.js",
     "/freelanceNew/assets/AuthModuleLogin-d1280515.css"
   ],
   "src/modules/auth-module/views/AuthModuleRegister.vue": [
-    "/freelanceNew/assets/AuthModuleRegister-31177502.js",
+    "/freelanceNew/assets/AuthModuleRegister-b989a6ec.js",
     "/freelanceNew/assets/AuthModuleRegister-fd2b893d.css"
   ],
   "src/modules/auth-module/views/AuthModuleRegister.vue?vue&type=script&setup=true&lang.ts": [
-    "/freelanceNew/assets/AuthModuleRegister-31177502.js",
+    "/freelanceNew/assets/AuthModuleRegister-b989a6ec.js",
     "/freelanceNew/assets/AuthModuleRegister-fd2b893d.css"
   ],
   "src/modules/auth-module/views/AuthModuleRegister.vue?vue&type=style&index=0&lang.scss": [
-    "/freelanceNew/assets/AuthModuleRegister-31177502.js",
+    "/freelanceNew/assets/AuthModuleRegister-b989a6ec.js",
     "/freelanceNew/assets/AuthModuleRegister-fd2b893d.css"
   ],
   "src/modules/home-module/index.ts": [
@@ -1422,10 +1422,10 @@
   "src/modules/home-module/routes.ts": [
   ],
   "src/modules/home-module/views/HomeModuleIndex.vue": [
-    "/freelanceNew/assets/HomeModuleIndex-76a40386.js"
+    "/freelanceNew/assets/HomeModuleIndex-52253c8d.js"
   ],
   "src/modules/home-module/views/HomeModuleIndex.vue?vue&type=template&lang.js": [
-    "/freelanceNew/assets/HomeModuleIndex-76a40386.js"
+    "/freelanceNew/assets/HomeModuleIndex-52253c8d.js"
   ],
   "src/modules/index.ts": [
   ],
@@ -1434,10 +1434,10 @@
   "src/modules/settings-module/routes.ts": [
   ],
   "src/modules/settings-module/views/SettingsModuleIndex.vue": [
-    "/freelanceNew/assets/SettingsModuleIndex-2e3be717.js"
+    "/freelanceNew/assets/SettingsModuleIndex-a0bc34fc.js"
   ],
   "src/modules/settings-module/views/SettingsModuleIndex.vue?vue&type=template&lang.js": [
-    "/freelanceNew/assets/SettingsModuleIndex-2e3be717.js"
+    "/freelanceNew/assets/SettingsModuleIndex-a0bc34fc.js"
   ],
   "src/router/index.ts": [
   ],
