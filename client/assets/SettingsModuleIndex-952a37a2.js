@@ -1,0 +1,1 @@
+import{r as e,a as t,o as s,c as r,w as _,b as a,d as l,_ as u}from"./index-b74ad35c.js";function p(v,m){const o=e("ui-title"),i=e("page-view"),c=t("ui-color"),n=t("ui-typo");return s(),r(i,null,{default:_(()=>[a(l(o,{level:"1",text:"Settings"},null,512),[[c,"white","text"],[n,{type:"title",size:"sm"}]])]),_:1})}const d={},f=u(d,[["render",p]]);export{f as default};
