@@ -24,6 +24,8 @@
     "src/main.ts",
     "src/**/*.ts",
     "src/**/*.vue",
-    "src/**/*.json"
-, "src/views/index.ts", "src/views/components/index.ts"  ],
+    "src/**/*.json",
+    "src/views/index.ts",
+    "src/views/components/index.ts"
+  ],
 }
