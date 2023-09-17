@@ -1,40 +1,48 @@
 <template lang="pug">
 div.ui-input
-  input(
-    v-model="model"
-    :class="inputClassName"
-    :type="inputType"
-  )
-  label(
-    v-if="label"
-    :class="labelClassName"
-  ) {{ label }}
+  div(class="ui-input__body")
+    input(
+      v-model="model"
+      :class="inputClassName"
+      :type="inputType"
+    )
+    label(
+      v-if="label"
+      :class="labelClassName"
+    ) {{ label }}
 
-  //- @slot иконка
-  div(
-    v-if="icon && type !== 'password'"
-    class="ui-input__icon-wrap"
-  )
-    svg-icon(
+    //- @slot иконка
+    div(
+      v-if="icon && type !== 'password'"
+      class="ui-input__icon-wrap"
+    )
+      svg-icon(
         type="mdi"
         :path="icon"
         size="20")
 
-  //- type password
-  div(
-    v-if="type === 'password'"
-    class="ui-input__icon-wrap"
-  )
-    button(
-      class="ui-input__icon-button"
-      @click="toggleShowInputText"
+    //- type password
+    div(
+      v-if="type === 'password'"
+      class="ui-input__icon-wrap"
     )
-      svg-icon(
-        class="ui-input__icon"
-        type="mdi"
-        :path="showInputText ? mdiLockOpenVariant : mdiLock"
-        size="20"
+      button(
+        class="ui-input__icon-button"
+        @click="toggleShowInputText"
       )
+        svg-icon(
+          class="ui-input__icon"
+          type="mdi"
+          :path="showInputText ? mdiLockOpenVariant : mdiLock"
+          size="20"
+        )
+
+  //- error
+  div(
+    v-if="error"
+    class="ui-input__error"
+  ) {{ error }}
+
 </template>
 
 <script setup lang="ts">
@@ -47,6 +55,7 @@ interface IUiInputProps {
   modelValue: any;
   type: string;
   icon?: string;
+  error?: string;
 }
 
 const props = withDefaults(defineProps<IUiInputProps>(), {
@@ -70,6 +79,7 @@ const model = computed<string>({
 const inputClassName = computed<ClassPropsType>(() => [
   'ui-input__input',
   { 'ui-input__input--icon': props.icon || props.type === 'password' },
+  { 'ui-input__input--error': props.error },
 ]);
 
 const labelClassName = computed<ClassPropsType>(() => [
@@ -106,10 +116,16 @@ function toggleShowInputText() {
   --ui-input-icon-wrap-height: calc(var(--ui-input-input-font-size) + var(--ui-input-input-padding-top) + var(--ui-input-input-padding-bottom));
   --ui-input-icon-wrap-width: 32px;
 
+  --ui-input-error-color: var(--color-red-3);
+
   position: relative;
-  display: flex;
-  flex-direction: column-reverse;
   width: 100%;
+
+  &__body {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   &__label {
     position: relative;
@@ -149,6 +165,10 @@ function toggleShowInputText() {
     &--icon {
       padding-right: var(--ui-input-icon-wrap-width);
     }
+
+    &--error {
+      border-color: var(--ui-input-error-color);
+    }
   }
 
   &__icon-wrap {
@@ -167,6 +187,15 @@ function toggleShowInputText() {
     cursor: pointer;
     z-index: 3;
   }
-}
 
+  &__error {
+    width: 100%;
+    // position: absolute;
+    // top: calc(100% + 2px);
+    // left: 0;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--ui-input-error-color);
+  }
+}
 </style>

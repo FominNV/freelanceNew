@@ -71,4 +71,8 @@ export const rus: ILanguageLocale = {
   language: {
     locale: 'Русский',
   },
+  validations: {
+    required: 'Обязательное поле',
+    email: 'Некорректный email',
+  },
 };

@@ -71,4 +71,8 @@ export const eng: ILanguageLocale = {
   language: {
     locale: 'English',
   },
+  validations: {
+    required: 'Required field',
+    email: 'Invalid email',
+  },
 };

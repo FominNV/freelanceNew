@@ -14,6 +14,8 @@
     "@mapbox/stylelint-processor-arbitrary-tags": "^0.4.0",
     "@mdi/js": "^7.2.96",
     "@vue/eslint-config-standard": "^8.0.1",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "compression": "^1.7.4",
     "eslint-plugin-vue-pug": "^0.6.0",
     "esm": "^3.2.25",

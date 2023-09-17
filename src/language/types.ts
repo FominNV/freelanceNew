@@ -69,4 +69,8 @@ export interface ILanguageLocale {
   language: {
     locale: string;
   }
+  validations: {
+    required: string;
+    email: string;
+  }
 }
